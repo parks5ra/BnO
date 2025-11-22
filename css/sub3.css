@@ -1,0 +1,411 @@
+@charset "utf-8";
+@font-face {
+    font-family: "eb";
+    src: url(../font/EBGaramond-VariableFont_wght.ttf) format('truetype-collection');   
+}
+.wrap{
+    width: 100%;
+}
+.history_intro{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20rem;
+}
+.intro_text{
+    width: 100%;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #D0D0D0;
+    padding-bottom: 2rem;
+}
+.intro_text h2{
+    text-align: center;
+    font-size: 4.9rem;
+    color: #666;
+}
+.intro_content p{
+  margin-top: 3rem;
+}
+.intro_content h3{
+    margin-top: 4rem;
+    color: #222;
+    font-size: 3.6rem;
+}
+.intro_content p{
+    font-size: 1.6rem;
+}
+.history_feature{
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 27rem;
+}
+.history_feature_container{
+    display: flex;
+    justify-content: space-between;  
+}
+.feature_left,
+.feature_right{
+    width: 49%;
+}
+.feature_right p{
+    font-size: 1.6rem;
+}
+.feature_right_top{
+    width: 100%;
+}
+.feature_right_top>div{
+    width: 100%;
+    display: flex;
+}
+.feature_right_top>div:nth-child(2){
+    justify-content: right;
+    margin: 4% 0;
+}
+.feature_right_top img,
+.feature_right_top p{
+    width: 48%;
+}
+.feature_right_bottom p{
+    margin-top: 4%;
+}
+
+
+.history_craft{
+    width: 100%;
+    margin-top: 24rem;
+}
+.craft_container{
+    width: 83%;
+    margin: 0 auto;
+}
+.craft_video{
+    width: 100%;
+}
+.craft_video video{
+    width: 100%;
+}
+.craft_container>h3{
+    margin-top: 4rem;
+    font-weight: 500;
+    font-size: 3.6rem;
+    color: #333
+}
+.craft_container>p{
+    margin-top: 0.8rem;
+    font-size:  1.6rem;
+    font-weight: 300;
+    color: #333;
+}
+.history_handmade{
+    width: 100%;
+    margin-top: 20rem;
+}
+.handemade_container{
+    width: 72%;
+    margin-top: 15%;
+    margin-left: 2%;
+}
+.handmade_con_2{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: -2%;
+    position: relative;
+}
+.handmade_text2{
+    width: 70%;
+    margin-top: 3rem;
+    color: #333;
+}
+.handmade_text_wrap_last_image{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 75px;
+}
+.history_circularity{
+    width: 100%;
+    margin-top: 10%;
+    position: relative;
+
+}
+.cir_right{
+    width: 21%;
+    position: absolute;
+    right: 2%;
+}
+.circularity_content{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 8%;
+
+}
+.circularity_content video{
+    width: 100%;
+    margin: 4% 0;
+}
+
+.circularity_content h2{
+    font-size: 3.6rem;
+}
+.circularity_content p{
+    font-size: 1.6rem;
+}
+.history_banner{
+    width: 100%;
+    margin-top: 18%;
+    position: relative;
+}
+.banner_text{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    font-size: 2rem;
+    letter-spacing: -2%;
+    margin-top: 1%;
+    font-weight: 300;
+}
+.banner_text h2{
+    font-weight: 500;
+}
+.history_banner p{
+    position: absolute;
+    right: 1%;
+    color: #666;
+    font-size: 1.8rem;
+}
+.history_slide{
+    width: 100%;
+    margin-top: 18%;
+}
+.slide_container{
+    /* margin-left: 2%; */
+}
+.slide_container{
+
+}
+.slide_container p,
+.slide_container h2{
+    margin-left: 5%;
+}
+.slide_container h2{
+    font-size: 4rem;
+    color: #333;
+}
+.slide_container>p{
+    font-size: 2rem;
+    color: #888;
+}
+.slide_track{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.slide_track p{
+    text-align: center;
+}
+.slide_caption{
+    font-size: 2.4rem;
+    color: #888;
+}
+/*슬라이드 */
+.slide_wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_track {
+    display: flex;
+    width: max-content;
+    animation: slideLoop 20s linear infinite;
+  }
+  
+.slide_item {
+    flex: 0 0 auto;
+    margin-right: 2rem;
+    width: 25vw; /* 뷰포트 기준으로 반응형 조정 */
+    max-width: 400px; /* 너무 커지지 않게 제한 */
+}
+  
+.slide_item img {
+    width: 100%; /* 부모(li)에 맞춰 자동 조정 */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+@keyframes slideLoop {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-50%);
+    }
+}
+  
+  /* hover 시 애니메이션 정지 */
+  .slide_wrapper:hover .slide_track {
+    animation-play-state: paused;
+  }
+/*여기까지 슬라이드*/
+
+.sound_stories{
+    width: 100%;
+    margin-top: 22rem;
+}
+.sound_stories_intro{
+    width: 58%;
+    margin: 0 auto;
+}
+.sound_stories_intro img{
+    margin-top: 4%;
+}
+.sound_stories_intro h2{
+    font-size: 5rem;
+    color: #666;
+    text-align: center;
+    font-family: "eb";
+}
+.sound_stories h3{
+    margin-top: 4%;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.sound_stories_text{
+    margin-top: 2.6%;
+    font-size: 1.8rem;
+}
+.person_image{
+    width: 35%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+.neo{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.person_text{
+    width: 60%;
+    margin-top: 6%;
+}
+.person_text h3{
+    font-size: 3rem;
+}
+.sound_person{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+.person_name{
+    font-size: 4.8rem;
+    letter-spacing: -6%;
+}
+.person_name span{
+    font-size: 1.6rem;
+    letter-spacing: -4%;
+}
+.description{
+    font-size: 1.4rem;
+    color: #777;
+    margin-top: 4%;
+}
+.quote{
+    font-size: 2.0rem;
+    font-weight: 400;
+    letter-spacing: -1%;
+    margin-top: 6%;
+}
+
+
+@media only screen and (max-width : 1020px) {
+
+    .intro_text h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    .intro_content h3 {
+        font-size: 2.6rem;
+    }
+
+    .intro_content p {
+        font-size: 1.4rem;
+    }
+    .history_feature{
+        margin-top: 10rem;
+    }
+    .feature_right_bottom p{
+        /* display: none; */
+        font-size: 1.4rem;
+    }
+    .feature_right_top p{
+        display: none;
+    }
+    .craft_container>h3{
+        font-size: 2.6rem;
+    }
+    .history_craft{
+        margin-top: 10rem;
+    }
+    .slide_caption {
+        font-size: 1.2rem;
+    }
+    .handmade_text1{
+        display: none;
+    }
+    .handmade_text2{
+        font-size: 1.4rem;
+    }
+    .history_circularity{
+        display: none;
+    }
+    .banner_text h2{
+        font-size: 1.4rem;
+    }
+    .history_banner p{
+        font-size: 1.2rem;
+    }
+    .slide_container h2{
+        font-size: 3rem;
+    }
+    .slide_track p{
+        font-size: 1.4rem;
+    }
+    .sound_stories_intro h2{
+        font-size: 4rem;
+    }
+    .sound_stories_text{
+        font-size: 1.4rem;
+    }
+    .sound_stories h3{
+        font-size: 2rem;
+    }
+    .sound_stories {
+        margin-top: 10rem;
+    }
+    .neo{
+        display: block;
+        /* width: 83%; */
+    }
+    .person_image{
+        width: 100%;
+    }
+    .person_text{
+        width: 100%;
+    }
+    .geo{
+        margin-bottom: 10rem;
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    .person_name span{
+        display: none;
+    }
+    .banner_text h2{
+        font-size: 1.2rem;
+    }
+}
+/* @media only screen and (min-width : 516px) and (max-width : 1020px) {} */

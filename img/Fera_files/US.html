@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://webservices.global-e.com/shared/prefetcher/1529/US?cb=1746268518 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="./content_bootstrap_css.css"><link rel="stylesheet" type="text/css" href="./content_bootstrap_cssRtl.css"><link rel="stylesheet" type="text/css" href="./CheckoutSkin"></head>
+<body>
+<script src="./prefetcher.js"></script>
+  
+    <script>
+ 
+        $.getJSON("/shared/PrefetcherProcess?cb=638809319468225537", { mid : 1529, countryISO : "US"}).done(function (data) {
+            LoadScripts(data.JavaScripts);
+            LoadImages(data.Images);
+            LoadStyles(data.StyleSheets);
+            LoadFonts(data.Fonts);
+        });
+
+        function LoadImages(images){
+            $(images).each(function(){
+                $('<img/>')[0].src = this.URL;
+            });          
+        }
+        function LoadScripts(scripts){
+            $(scripts).each(function(){
+                $.ajax(this.URL,{cache: true, dataType:'text'});
+            });              
+        }
+        function LoadStyles(styles){
+            $(styles).each(function(){
+                $('<link>').attr('rel','stylesheet')
+                  .attr('type','text/css')
+                  .attr('href',this.URL)
+                  .appendTo('head');
+            });   
+        }
+
+        function LoadFonts(fonts){
+            $(fonts).each(function(){
+                var span = $('<span/>');
+                //span.html("test");
+                span.css("font-family",this.URL);
+                span.appendTo("body");
+            });   
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93a6b0ee6c655871',t:'MTc0NjM0ODAwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;" src="./saved_resource.html"></iframe>
+
+<span style="font-family: HelveticaNeueW0175Bold;"></span><span style="font-family: helveticaneueltstdRoman;"></span><span style="font-family: HelveticaNeueW01-45Ligh;"></span></body></html>
