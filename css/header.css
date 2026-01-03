@@ -13,22 +13,22 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
-    font-family: "avenir";
 }
 
 html {
-    /* font-size: clamp(2px, 1vw, 18px); */
     font-size: 62.5%;
 }
 
 body {
-    /* font-size: clamp(2px, 1vw, 18px); */
-    /* font-size: 62.5%; */
+    font-family: "avenir";
     background-color: #fff;
     font-style: normal;
     line-height: 1.5;
+}
+
+li {
+    list-style: none;
 }
 
 a {

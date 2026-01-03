@@ -234,8 +234,7 @@ footer{
     margin-top: 21rem;
 }
 
-@media only screen and (max-width : 1020px) {
-
+@media only screen and (max-width: 1020px) and (min-width: 721px) {
     .master_section h2{
         /* font-size: 3.8rem; */
         font-size: 2.0rem;
@@ -274,14 +273,45 @@ footer{
     .last_article_3_left p{
         font-size: 1.4rem;
     }
-
 }
-@media only screen and (max-width : 516px) {
+
+@media only screen and (max-width: 720px) {
+    .master_section h2{
+        /* font-size: 3.8rem; */
+        font-size: 2.0rem;
+    }
+    .master_section p{
+        font-size: 1.4rem;
+    }
+    .bring_section h2{
+        /* font-size: 3.2rem; */
+        font-size: 3.0rem;
+    }
     .bring_section h3{
         font-size: 2.8rem;
     }
-    .bring_text p {
+    .bring_text p{
         display: none;
     }
-  
+    .last_article_1 h2{
+        font-size: 3.8rem;
+    }
+    .last_article_1 p{
+        font-size: 1.4rem;
+    }
+    .master_text_1{
+        font-size: 1.4rem;
+    }
+    .master_section,
+    .banner_strip,
+    .bring_section,
+    .last_section,
+    .last_article_2_content,
+    .last_article_3{
+        margin-top: 10rem;
+    }
+    .last_article_2_text,
+    .last_article_3_left p{
+        font-size: 1.4rem;
+    }
 }
